@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Esercizio 3</title>
+    <style>
+        body{background-color:rgb(124, 235, 124)}
+        h1.titolo{text-align:center}
+        h2.domanda, h3.domanda{color:red}
+        div.e1{background-color: lightblue;}
+        p.e11{color: yellow;}
+
+        div.e2{background-image: url(paper.png);
+               color:green;
+        }
+        p.e21{color:green}
+
+        div.e3{background-image: url(img.jpg);
+               background-repeat: repeat-x;
+               color:green
+        }
+        p.e31{color:green}
+
+        div.e4{background-image: url(img2.jpg);
+               background-repeat: repeat-y;
+               color:green
+        }
+        p.e41{color:green}
+
+        div.e5{background-image: url(img3.jpg);
+               background-repeat: no-repeat;
+               color:green
+        }
+        p.e51{color:green}
+
+        div.e6{background-image: url(img4.jpeg);
+               background-repeat: no-repeat;
+               background-position: bottom right;
+               color:green;
+               text-align:right;
+               text-align:bottom;
+        }
+        p.e61{color:green;
+              text-align:right;
+              text-align:bottom;
+        }
+
+        div.e7{background-image: url(img5.jpg);
+               background-repeat: no-repeat;
+               background-position: bottom right;
+               color:green;
+               text-align:right;
+               text-align:bottom;
+               background-attachment: 0;
+        }
+        p.e71{color:green;
+              text-align:right;
+              text-align:bottom;
+        }
+
+		
+		
+		
+		
+		
+		
+		
+        div.e12{background-color: lightblue;
+		border-style: dotted;}
+        p.e112{color: yellow;}
+
+        div.e22{background-image: url(paper.png);
+		border-style: dashed;
+               color:green;
+        }
+        p.e212{color:green}
+
+        div.e32{background-image: url(img.jpg);
+               background-repeat: repeat-x;
+               color:green
+			   border-style: solid;
+        }
+        p.e312{color:green}
+
+        div.e42{background-image: url(img2.jpg);
+               background-repeat: repeat-y;
+               color:green
+			   border-style: double;
+        }
+        p.e412{color:green}
+
+        div.e52{background-image: url(img3.jpg);
+               background-repeat: no-repeat;
+               color:green
+			   border-style: groove;
+        }
+        p.e512{color:green}
+
+        div.e62{background-image: url(img4.jpeg);
+               background-repeat: no-repeat;
+			   margin-left:1635px;
+               color:green;
+			   border-style: ridge;
+			   width:250px;
+        }
+        p.e612{color:green;
+              text-align:right;
+              text-align:bottom;
+        }
+
+        div.e72{background-image: url(img5.jpg);
+               background-repeat: no-repeat;
+              background-repeat: no-repeat;
+			   margin-left:1635px;
+               color:green;
+			   border-style: inset;
+			   width:250px;
+			   
+        }
+        p.e712{color:green;
+              text-align:right;
+              text-align:bottom;
+        }
+		
+		div.e82{background-color:yellow;
+		border-style: outset;
+		color:blue;
+		}
+		p.e812{color:blue;}
+		
+		div.e92{background-color:yellow;
+		border-style: none;
+		color:blue;
+		}
+		p.e912{color:blue;}
+		
+		div.e102{background-color:yellow;
+		border-style: hidden;
+		color:blue;
+		}
+		p.e1012{color:blue;}
+		
+		div.e112{background-color:yellow;
+		border-style: dotted dashed solid double;
+		color:blue;
+		}
+		p.e1112{color:blue;}
+		
+		
+		
+		div.e312{border-width: 17px;
+		background-color: lightblue;
+		border-style: groove;}
+		
+		div.e322{border-color: yellow;
+		border-style: dashed;}
+		
+		div.e332{border-top-style: dotted}
+		
+		div.e342{border-right-style: solid}
+		
+		div.e352{border-bottom-style: groove}
+		
+		div.e362{border-left-style: dashed}
+		
+		
+		
+		
+		div.e412{border-style: dotted solid double dashed;}
+		
+
+
+        div.e4133{border: 5px solid red}
+
+		
+    </style>
+</head>
+<body>
+    <h1 class="titolo">ESERCIZIO 3 - CSS ADVANCED</h1>
+    <h2 class="domanda">1) Imposta le seguenti scritte...</h2>
+    <h3 class="domanda">a° Scritta verde... </h3>
+    <p style="color:rgb(2, 92, 2)">Ciao sono una scritta verde.</p>
+    <h3 class="domanda">b° Scritta bianca semitrasparente...</h3>
+    <p style="color:rgba(255,255,255,0.59)">Ciao sono una scritta bianca semitrasparente.</p>
+    <h3 class="domanda">c° Scritta gialla...</h3>
+    <p style="color:#ffff00">Ciao sono una scritta gialla.</p>
+    <hr>
+    <h2 class="domanda">2) Crea 7 DIV con le seguenti caratteristiche.</h2>
+    <h3 class="domanda">a° Div1.</h3>
+    <div style="color:blue">i. Ciao sono un div colorato.</div>
+    <div class="e1"><p class="e11">ii. Testo del paragrafo.</p></div>
+    <br>
+    <h3 class="domanda">b° Div2.</h3>
+    <div class="e2">i. Ciao sono un div con sfondo.</div>
+    <div class="e2"><p class="e21">ii. Testo del paragrafo dentro il div.</p></div>
+    <br>
+    <h3 class="domanda">c° Div3.</h3>
+    <div class="e3">i. Ciao sono un div con sfondo ripetuto orizzontalmente.</div>
+    <div class="e3"><p class="e31">ii. Testo del paragrafo dentro il div.</p></div>
+    <br>
+    <h3 class="domanda">d° Div4.</h3>
+    <div class="e4">i. Ciao sono un div con sfondo ripetuto verticalmente.</div>
+    <div class="e4"><p class="e41">ii. Testo del paragrafo dentro il div.</p></div>
+    <br>
+    <h3 class="domanda">e° Div5.</h3>
+    <div class="e5">i. Ciao sono un div con sfondo non ripetuto.</div>
+    <div class="e5"><p class="e51">ii. Testo del paragrafo dentro il div.</p></div>
+    <br>
+    <h3 class="domanda">f° Div6.</h3>
+    <div class="e6">i. Ciao sono un div con sfondo non ripetuto.</div>
+    <div class="e6"><p class="e61">ii. Testo del paragrafo dentro il div.</p></div>
+    <br>
+    <h3 class="domanda">g° Div7.</h3>
+    <div class="e7">i. Ciao sono un div con sfondo non ripetuto che non scrolla.</div>
+    <div class="e7"><p class="e71">ii. Testo del paragrafo dentro il div.</p></div>
+    <hr>
+    <h2 class="domanda">3) Modifica i bordi dei div precedenti come segue:</h2>
+    <h3 class="domanda">a° Div1.</h3>
+    <div style="color:blue">i. Ciao sono un DIV colorato.</div>
+    <div class="e12"><p class="e112">ii. Testo del paragrafo.</p></div>
+    <br>
+    <h3 class="domanda">b° Div2.</h3>
+    <div class="e22">i. Ciao sono un div con sfondo.</div>
+	<br>
+    <div class="e22"><p class="e212">ii. Testo del paragrafo dentro il div.</p></div>
+    <br>
+    <h3 class="domanda">c° Div3.</h3>
+    <div class="e32">i. Ciao sono un div con sfondo ripetuto orizzontalmente.</div>
+    <div class="e32"><p class="e312">ii. Testo del paragrafo dentro il div.</p></div>
+    <br>
+    <h3 class="domanda">d° Div4.</h3>
+    <div class="e42">i. Ciao sono un div con sfondo ripetuto verticalmente.</div>
+    <div class="e42"><p class="e412">ii. Testo del paragrafo dentro il div.</p></div>
+    <br>
+    <h3 class="domanda">e° Div5.</h3>
+    <div class="e52">i. Ciao sono un div con sfondo non ripetuto.</div>
+    <div class="e52"><p class="e512">ii. Testo del paragrafo dentro il div.</p></div>
+    <br>
+    <h3 class="domanda">f° Div6.</h3>
+    <div class="e62">i. Ciao sono un div con sfondo non ripetuto.</div>
+    <div class="e62"><p class="e612">ii. Testo del paragrafo dentro il div.</p></div>
+    <br>
+    <h3 class="domanda">g° Div7.</h3>
+    <div class="e72">i. Ciao sono un div con sfondo non ripetuto che non scrolla.</div>
+    <div class="e72"><p class="e712">ii. Testo del paragrafo dentro il div.</p></div>
+	<br>
+	<h3 class="domanda">h° Div8.</h3>
+	<div class="e82">i. Ciao sono un div con un bordo strano.</div>
+	<br>
+	<div class="e82"><p class="e812">ii. Testo del paragrafo dentro il div.</p></div>
+	<br>
+	<h3 class="domanda">i° Div9.</h3>
+	<div class="e92">i. Ciao sono un div con un bordo strano.</div>
+	<div class="e92"><p class="e912">ii. Testo del paragrafo dentro il div.</p></div>
+	<br>
+	<h3 class="domanda">j° Div10.</h3>
+	<div class="e102">i. Ciao sono un div con un bordo strano.</div>
+	<div class="e102"><p class="e1012">ii. Testo del paragrafo dentro il div.</p></div>
+	<br>
+	<h3 class="domanda">k° Div11.</h3>
+	<div class="e112">i. Ciao sono un div con un bordo strano.</div>
+	<br>
+	<div class="e112"><p class="e1112">ii. Testo del paragrafo dentro il div.</p></div>
+	<hr>
+	<h2 class="domanda">4) Modifica le seguenti proprietà relativamente ad alcuni bordi dei div appena creati.</h2>
+	<h3 class="domanda">a° Border-Width.</h3>
+	<div class="e312">Div con Border-Width modificato.</div>
+	<br>
+	<h3 class="domanda">b° Border-Color.</h3>
+	<div class="e322">Div con Border-Color modificato.</div>
+	<br>
+	<h3 class="domanda">c° Border-Top-Style.</h3>
+	<div class="e332">Div con Border-Top-Style modificato.</div>
+	<br>
+	<h3 class="domanda">d° Border-Right-Style.</h3>
+	<div class="e342">Div con Border-Right-Style modificato.</div>
+	<br>
+	<h3 class="domanda">e° Border-Bottom-Style.</h3>
+	<div class="e352">Div con  Border-Bottom-Style modificato.</div>
+	<br>
+	<h3 class="domanda">f° Border-Left-Style.</h3>
+	<div class="e362">Div con Border-Left-Style modificato.</div>
+	<hr>
+	<h2 class="domanda">5) Prova il seguente codice su uno dei div...</h2>
+	<h3 class="domanda">a° border-style: dotted solid double dashed;</h3>
+    <div class="e412">Lo stile viene applicato nell'ordine in cui l'abbiamo scritto.</div>
+    <h3 class="domanda">b° border: 5px solid red;</h3>
+    <div class="e4133">Con 5px indichiamo la grandezza del bordo, con solid il tipo e con red il colore.</div>
+</body>
+</html>

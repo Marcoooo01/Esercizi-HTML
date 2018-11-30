@@ -1,0 +1,167 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Esercizio 1</title>
+    <style>
+        body{background-color: rgb(124, 235, 124)}
+        h1.titolo{text-align:center}
+        h2.domanda{color:red}
+        h1.es4{text-align:center;
+        color:blue;
+        font-family:'Times New Roman', Times, serif;
+        }
+		pre.grosso{font-size:15px}
+        h3.domandap{color:red;}
+        p.center {
+        text-align: center;
+        color: red;
+        }
+        h1.es9, h2.es9, p.es9 {    
+                text-align: center;
+                color: red;
+            }   /*Prova commento CSS*/
+    </style>
+</head>
+<body>
+    <h1 class="titolo">ESERCIZIO 1 - CSS ADVANCED</h1>
+    <h2 class="domanda">1) Cosa significa CSS?</h2>
+    <p><b>CSS</b> sta per <b>C</b>ascading <b>S</b>tyle <b>S</b>heets.</p>
+    <hr>
+    <h2 class="domanda">2) A cosa servono?</h2>
+    <p><p><b>CSS</b> descrive come gli elementi HTML devono essere visualizzati su schermo, carta o su altri supporti.</p></p>
+    <hr>
+    <h2 class="domanda">3) Qual è il “grosso problema” che risolvono i CSS rispetto alla formattazione html?</h2>
+    <p>HTML non ha mai avuto lo scopo di contenere tag per la formattazione di una pagina web!</p>
+    <p>HTML è stato creato per descrivere il contenuto di una pagina Web, ad esempio:</p>
+    <pre>&lth1&gt Questa è un'intestazione &lt/h1&gt    
+&ltp&gt Questo è un paragrafo. &lt/p&gt</pre>
+    <p>Quando tag come &ltfont&gt e attributi di colore sono stati aggiunti alle specifiche HTML 3.2, è iniziato un incubo per gli sviluppatori web.</p> 
+    <p>Lo sviluppo di grandi siti Web, in cui i caratteri e le informazioni sul colore sono stati aggiunti a ogni singola pagina, è diventato un processo lungo e costoso.</p>
+    <p>Per risolvere questo problema, il World Wide Web Consortium (W3C) ha creato CSS.</p>
+    <p>Il CSS ha rimosso la formattazione dello stile dalla pagina HTML!</p>
+    <hr>
+    <h2 class="domanda">4) Aggiungi alla tua pagina HTML un intestazione (h1) che usa un CSS</h2>
+	<pre class="grosso">&lthead&gt
+    &ltstyle&gt
+        body{background-color: rgb(124, 235, 124)}
+        h1.titolo{text-align:center}
+        h2.domanda{color:red}
+        h1.es4{text-align:center;
+        color:blue;
+        font-family:'Times New Roman', Times, serif;
+        }
+    &lt/style&gt
+&lt/head&gt </pre>
+    <h1 class="es4">INTESTAZIONE ES.4</h1>
+    <hr>
+    <h2 class="domanda">5) Cosa si intende per...</h2> 
+    <h3 class="domandap">a° Element Selector.</h3>
+    <p>L'<b>Element Selector</b> seleziona tutti gli elementi con il nome dell'elemento specificato.</p> 
+    <h3 class="domandap">b° IdSelector.</h3>
+    <p>L'<b>IdSelector</b> disegna l'elemento con l'id specificato</p>
+    <h3 class="domandap">c° Class Selector.</h3>
+    <p>Il <b>Class Selector</b> seleziona gli elementi con un attributo di classe specifico. Per Selezionare elementi con una classe specifica, scrivi un carattere punto (.), seguito dal nome della classe.</p>
+    <hr>
+    <h2 class="domanda">6) Fai tre esempi...</h2>
+    <p><b>Esempio Element Selector:</b></p>
+    <pre class="grosso">&lthead&gt
+    &ltstyle&gt
+        p{background-color:yellow;}
+    &ltstyle&gt
+&lthead&gt
+    </pre>
+    <p><i>Esso seleziona e abbina tutti gli elementi di &ltp&gt.</i></p>
+    <br>
+    <p><b>Esempio IdSelector:</b></p>
+    <pre class="grosso">&lthead&gt
+    &ltstyle&gt
+        #firstname{background-color: yellow;}
+    &ltstyle&gt
+&lthead&gt
+     </pre>
+     <p><i>Esso modella l'elemento con l'id = "#firstname".</i></p>
+     <br>
+    <p><b>Esempio Class Selector:</b></p>
+    <pre class="grosso">&lthead&gt
+     &ltstyle&gt
+        .intro {background-color: yellow;}
+     &ltstyle&gt
+&lthead&gt
+    </pre>
+    <p><i>Seleziona e affina tutti gli elementi con class = "intro".</i></p>
+    <hr>
+    <h2 class="domanda">7) Che differenza c'è tra clase e id?</h2>
+    <p><b>Classe...</b></p>
+   <pre>Le classi servono per definire una tipologia di elementi, cioè per attribuire uno scopo e/o una presentazione 
+ad un sottoinsieme di elementi con caratteristiche e funzionalità comuni di una pagina HTML.</pre>
+<p><b>ID...</b></p>
+<pre>Gli id servono per 
+definire un elemento unico in una pagina, con un unico e preciso scopo, nella maggior parte dei casi tale scopo 
+è determinare una sezione in una pagina HTML.</pre>
+<hr>
+    <h2 class ="domanda">8) Prova il seguente codice:</h2>
+    <p><b><i><ins>Codice...</ins></i></b></p>
+    <pre class="grosso">
+&lthead&gt
+    &ltstyle&gt
+        p.center {
+        text-align: center;
+        color: red;
+        }
+    &lt/style&gt
+&lt/head&gt
+    &ltbody&gt
+        &lth1 class="center"&gtThis heading will not be affected&lt/h1&gt
+        &ltp class="center"&gtThis paragraph will be red and center-aligned.&lt/p&gt
+        &ltp&gtThis heading will not be affected.&lt/p&gt
+    &lt/body&gt
+    </pre>
+    <br>
+    <p><b><i><ins>Risultato del codice...</ins></i></b></p>
+    <p><h1 class="center">This heading will not be affected</h1>
+        <p class="center">This paragraph will be red and center-aligned.</p> 
+        <p>This heading will not be affected.</p></p>
+        <br>
+    <h3 class="domandap">a° Quale paragrafo viene formattato?</h3>
+    <p>Viene formattato il paragrafo che ha class= "center".</p>
+    <h3 class="domandap">b° Perchè non viene formattato l'h1?</h3>
+    <p>L'h1 non viene formattato perchè abbiamo messo la classe center ha un tag &ltp&gt.</p>
+    <h3 class="domandap">c° Perchè non viene formattato il secondo paragrafo?</h3>
+    <p>Perchè nel secondo paragrafo non è stata inserita la classe "center".</p>
+    <h3 class="domandap">d° Spiega la notazione p.center.</h3>
+    <p>La notazione p.center è un "class selector" ed esso seleziona tutti gli elementi che hanno come class="center".</p>
+    <hr>
+    <h2 class="domanda">9) Prova il seguente codice...</h2>
+    <p><b><i><ins>Codice...</ins></i></b></p>
+    <pre class="grosso">&lt!DOCTYPE html&gt
+&lthtml&gt
+    &lthead&gt
+        &ltstyle&gt
+            h1, h2, p {
+                text-align: center;
+                color: red;
+            }
+        &lt/style&gt
+    &lt/head&gt
+        &ltbody&gt
+            &lth1&gtHello World!&lt/h1&gt
+            &lth2&gtSmaller heading!&lt/h2&gt
+            &ltp&gtThis is a paragraph.&lt/p&gt
+        &lt/body&gt
+    &lt/html&gt
+        </pre>
+        <br>
+        <p><b><i><ins>Risultato del codice...</ins></i></b></p>
+        <h1 class="es9">Hello World!</h1>
+<h2 class="es9">Smaller heading!</h2>
+<p class="es9">This is a paragraph.</p>
+<h3 class="domandap">a° Per quale ragione lo stile viene applicato a tutti i tag?</h3>
+<p>Perchè a nessun tag è stata inserita nessuna classe particolare e quindi a tutti i tag di quel tipo viene applicato quello stile. </p>
+<h3 class="domandap">b° Come si raggruppano più selettori con la stessa formattazione?</h3>
+<p>Mettendo la virgola tra i vari selettori.</p>
+<hr>
+<h2 class="domanda">10) Come si fanno i commenti in css?</h2> 
+<p>I commenti in css si fanno inserendo /* all'inizio del commento e */ alla fine del commento.</p> 
+</body>
+</html>

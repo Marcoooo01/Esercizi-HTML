@@ -1,0 +1,69 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Esercizio 2</title>
+    <style>
+        body {background-color: rgb(124, 235, 124)}
+        h1.titolo{text-align:center}
+        h2 {color:red}
+        h3 {color:red}
+    </style>
+</head>
+<body>
+    <h1 class="titolo">Esercizio 2 - CSS INTRODUZIONE</h1>
+    <h2>1) INLINE CSS</h2>
+    <p>Lo stile inline può essere usato per applicare uno stile unico per un singolo elemento.</p>
+    <p>Per usare gli stili in linea, aggiungi l'attributo style all'elemento pertinente.</p>
+    <p>L'attributo style può contenere qualsiasi proprietà CSS.</p>
+    <p>Esempio:</p>
+    <p>&ltp style="color:blue; margin-left:30px;">Questo è un testo con uno stile.&lt/p&gt</p>
+    <hr>
+    <h2>2) INTERNAL CSS</h2>
+    <p>Un foglio di stile interno può essere usato se una singola pagina ha uno stile unico.
+    <p>Gli stili interni sono definiti all'interno dell'elemento &ltstyle&gt, all'interno della sezione &lthead&gt di una pagina HTML:</p>
+    <p>Esempio:</p>
+    <pre>&lthead&gt
+    &ltmeta charset="UTF-8"&gt
+    &lttitle>Esercizio 2&lt/title&gt
+    &ltstyle&gt
+        body {background-color: rgb(124, 235, 124)}
+        h1.titolo{text-align:center}
+        h2 {color:red}
+    &lt/style&gt
+&lt/head&gt </pre>
+    <hr>
+    <h2>3) EXTERNAL CSS</h2>
+    <p>Con un foglio di stile esterno, puoi cambiare l'aspetto di un intero sito cambiando un solo file.
+    <p>Ogni pagina deve includere un riferimento al file del foglio di stile esterno all'interno dell'elemento &ltlink&gt.
+    <p>L'elemento &ltlink&gt entra nella sezione &lthead&gt.</p>
+    <p>Esempio:</p>
+    <pre>&lthead&gt
+    &ltlink rel="stylesheet" type="text/css" href.="mystyle.css"(senza il punto)&gt
+&lt/head&gt
+    </pre>
+    <p>Contenuto mystyle.css:</p>
+    <pre>body {
+        background-color: lightblue;
+    }
+    
+h1 {
+        color: navy;
+        margin-left: 20px;
+    }</pre>
+    <hr>
+    <h2>4) A cosa servono le seguenti proprietà dei css?</h2>
+    <h3>4a° - color</h3>
+    <p>La proprietà color assegna un colore ad un elemento.</p>
+    <h3>4b° - font-family</h3>
+    <p>La proprietà font-family assegna un font ad un elemento.</p>
+    <h3>4c° - font-size</h3>
+    <p>La proprietà font-size assegna una grandezza ad un elemento.</p>
+    <h3>4d° - border</h3>
+    <p>La proprietà border assegna lo stile, la larghezza e il colore del bordo di un elemento.</p>
+    <h3>4e° - padding</h3>
+    <p>La proprietà padding viene utilizzata per generare spazio attorno al contenuto di un elemento, all'interno di qualsiasi bordo definito. </p>
+    <h3>4f° - margin</h3>
+    <p>La proprietà margin viene utilizzata per creare lo spazio attorno agli elementi, al di fuori dei confini definiti.</p>
+</body>
+</html>

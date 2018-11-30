@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.ex1 {
+	width:500px;
+	margin: auto;
+	border: 3px solid #73AD21;
+}
+
+div.ex2 {
+	max-width:500px;
+	margin: auto;
+	border: 3px solid #73AD21;
+}
+
+pre.e3{font-size:15px;}
+</style>
+</head>
+<body>
+
+<div class="ex1">This div element has width: 500px;</div>
+<br>
+
+<div class="ex2">This div element has max-width: 500px;</div>
+
+<p><strong>Tip:</strong> Drag the browser window to smaller than 500px wide, to see the difference between
+the two divs!</p><br>
+
+
+<b><pre class ="e3">L'impostazione width di un elemento a livello di blocco impedisce che si estenda fino ai bordi del suo contenitore. 
+Quindi, puoi impostare i margini su automatico, per centrare orizzontalmente l'elemento all'interno del suo contenitore.
+L'elemento occuperà la larghezza specificata e lo spazio rimanente verrà suddiviso equamente tra i due margini.</pre></b>
+<b><pre class="e3">Usando max-widthinvece, in questa situazione, migliorerà la gestione del browser di piccole finestre. 
+Questo è importante quando si rende un sito utilizzabile su piccoli dispositivi</pre></b>
+</body>
+</html>

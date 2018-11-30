@@ -1,0 +1,19 @@
+body{background-color: rgb(124, 235, 124)}
+
+h1.titolo{text-align:center}
+
+p.frase1{color:blue}
+
+p.frase2{letter-spacing: 10px}
+
+p.frase3{text-align: center}
+
+p.frase4{text-align: right}
+
+p.frase5{text-align: justify}
+
+p.frase6{text-decoration: overline}
+
+p.frase7{text-decoration: line-through}
+
+p.frase8{text-decoration: underline}
